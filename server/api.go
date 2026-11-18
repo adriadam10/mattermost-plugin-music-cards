@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"runtime/debug"
 	"strings"
 	"unicode/utf8"
 
@@ -17,7 +18,31 @@ func (p *Plugin) newRouter() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /api/v1/search", p.handleSearch)
 	mux.HandleFunc("POST /api/v1/share", p.handleShare)
-	return requireUser(mux)
+	return p.recoverPanics(requireUser(mux))
+}
+
+// upstreamError answers a failed call to YouTube Music. The search window
+// cancels the previous search on every keystroke; in a plugin, writing to a
+// cancelled request panics (its header map is gone), so those get no answer.
+func (p *Plugin) upstreamError(w http.ResponseWriter, r *http.Request, msg string, err error) {
+	if r.Context().Err() != nil {
+		return
+	}
+	p.API.LogWarn("YouTube Music request failed", "err", err.Error())
+	http.Error(w, msg, http.StatusBadGateway)
+}
+
+// recoverPanics keeps a bug in one request from killing the plugin process:
+// unlike net/http's own server, the plugin RPC does not recover handler panics.
+func (p *Plugin) recoverPanics(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		defer func() {
+			if v := recover(); v != nil {
+				p.API.LogError("Panic serving a request", "path", r.URL.Path, "panic", fmt.Sprint(v), "stack", string(debug.Stack()))
+			}
+		}()
+		next.ServeHTTP(w, r)
+	})
 }
 
 func requireUser(next http.Handler) http.Handler {
@@ -45,21 +70,17 @@ func (p *Plugin) handleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 	lang := p.userLanguage(r.Header.Get("Mattermost-User-Id"))
 	var tracks []track
+	var err error
 	if id, ok := videoIDFromLink(query); ok {
-		t, err := p.yt.lookup(r.Context(), id, lang)
-		if err != nil {
-			p.API.LogWarn("YouTube Music lookup failed", "video", id, "err", err.Error())
-			http.Error(w, "song not found", http.StatusBadGateway)
-			return
-		}
+		var t track
+		t, err = p.yt.lookup(r.Context(), id, lang)
 		tracks = []track{t}
 	} else {
-		var err error
-		if tracks, err = p.yt.search(r.Context(), query, lang); err != nil {
-			p.API.LogWarn("YouTube Music search failed", "err", err.Error())
-			http.Error(w, "search failed", http.StatusBadGateway)
-			return
-		}
+		tracks, err = p.yt.search(r.Context(), query, lang)
+	}
+	if err != nil {
+		p.upstreamError(w, r, "search failed", err)
+		return
 	}
 	p.tracks.add(tracks)
 	writeJSON(w, map[string][]track{"tracks": tracks})
@@ -94,7 +115,7 @@ func (p *Plugin) handleShare(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		var err error
 		if t, err = p.yt.lookup(r.Context(), req.VideoID, p.userLanguage(userID)); err != nil {
-			http.Error(w, "song not found", http.StatusBadGateway)
+			p.upstreamError(w, r, "song not found", err)
 			return
 		}
 	}
