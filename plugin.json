@@ -1,0 +1,30 @@
+{
+    "id": "com.github.adriadam10.music-cards",
+    "name": "Music Cards",
+    "description": "Search YouTube Music from the message box and share songs as cards with a built-in player.",
+    "homepage_url": "https://github.com/adriadam10/mattermost-plugin-music-cards",
+    "support_url": "https://github.com/adriadam10/mattermost-plugin-music-cards/issues",
+    "version": "0.1.0",
+    "min_server_version": "12.0.0",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "linux-arm64": "server/dist/plugin-linux-arm64"
+        }
+    },
+    "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+    },
+    "settings_schema": {
+        "header": "Songs are searched on YouTube Music from the Mattermost server, without an API key.",
+        "settings": [
+            {
+                "key": "Region",
+                "display_name": "Region",
+                "type": "text",
+                "default": "US",
+                "help_text": "Two-letter country code (ES, US…) used for search results and song availability."
+            }
+        ]
+    }
+}

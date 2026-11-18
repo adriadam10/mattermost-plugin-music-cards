@@ -1,0 +1,283 @@
+{
+  "contents": {
+    "tabbedSearchResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "musicShelfRenderer": {
+                      "contents": [
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/NcPO6bbPE3euQSRNRwFC0FvRJ-TEzKRql9-FeyO6c0CP1Ow0YdPZhfDFgnEpro7N1rhZ3LxOxKUjqNo=w60-h60-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/NcPO6bbPE3euQSRNRwFC0FvRJ-TEzKRql9-FeyO6c0CP1Ow0YdPZhfDFgnEpro7N1rhZ3LxOxKUjqNo=w120-h120-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                                "trackingParams": "CPcCEIS_AiITCNqo8OWakZgDFQE88QUdJdYEgQ=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "DESPECHÁ",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "COUCEOFnGAAiEwjaqPDlmpGYAxUBPPEFHSXWBIGaAQMQ9CTKAQQkYHQ0",
+                                          "watchEndpoint": {
+                                            "videoId": "dN3y8kVNplA",
+                                            "watchEndpointMusicSupportedConfigs": {
+                                              "watchEndpointMusicConfig": {
+                                                "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "ROSALÍA",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "COUCEOFnGAAiEwjaqPDlmpGYAxUBPPEFHSXWBIHKAQQkYHQ0",
+                                          "browseEndpoint": {
+                                            "browseId": "UCeYz6rzUGhVwqxRM37FUo8w",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "text": " • "
+                                      },
+                                      {
+                                        "text": "MOTOMAMI +",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "COUCEOFnGAAiEwjaqPDlmpGYAxUBPPEFHSXWBIHKAQQkYHQ0",
+                                          "browseEndpoint": {
+                                            "browseId": "MPREb_VdtEnJZ2vqp",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_ALBUM"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "text": " • "
+                                      },
+                                      {
+                                        "text": "2:37"
+                                      }
+                                    ],
+                                    "accessibility": {
+                                      "accessibilityData": {
+                                        "label": "ROSALÍA • MOTOMAMI + • 2 minutos y 37 segundos"
+                                      }
+                                    }
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "1091 M reproducciones"
+                                      }
+                                    ],
+                                    "accessibility": {
+                                      "accessibilityData": {
+                                        "label": "mil millones reproducciones"
+                                      }
+                                    }
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "playlistItemData": {
+                              "videoId": "dN3y8kVNplA"
+                            }
+                          }
+                        },
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w60-h60-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w120-h120-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                                "trackingParams": "COQCEIS_AiITCNqo8OWakZgDFQE88QUdJdYEgQ=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "La Perla",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "CNICEOFnGAEiEwjaqPDlmpGYAxUBPPEFHSXWBIGaAQMQ9CTKAQQkYHQ0",
+                                          "watchEndpoint": {
+                                            "videoId": "w7pjt9ZH3NM",
+                                            "watchEndpointMusicSupportedConfigs": {
+                                              "watchEndpointMusicConfig": {
+                                                "musicVideoType": "MUSIC_VIDEO_TYPE_ATV"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "ROSALÍA",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "CNICEOFnGAEiEwjaqPDlmpGYAxUBPPEFHSXWBIHKAQQkYHQ0",
+                                          "browseEndpoint": {
+                                            "browseId": "UCeYz6rzUGhVwqxRM37FUo8w",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "text": " y "
+                                      },
+                                      {
+                                        "text": "Yahritza Y Su Esencia",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "CNICEOFnGAEiEwjaqPDlmpGYAxUBPPEFHSXWBIHKAQQkYHQ0",
+                                          "browseEndpoint": {
+                                            "browseId": "UC5oOy_NEadrnh0lXtJpzgjA",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "text": " • "
+                                      },
+                                      {
+                                        "text": "LUX",
+                                        "navigationEndpoint": {
+                                          "clickTrackingParams": "CNICEOFnGAEiEwjaqPDlmpGYAxUBPPEFHSXWBIHKAQQkYHQ0",
+                                          "browseEndpoint": {
+                                            "browseId": "MPREb_G6BH2uQgVxU",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_ALBUM"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "text": " • "
+                                      },
+                                      {
+                                        "text": "3:16"
+                                      }
+                                    ],
+                                    "accessibility": {
+                                      "accessibilityData": {
+                                        "label": "ROSALÍA y Yahritza Y Su Esencia • LUX • 3 minutos y 16 segundos"
+                                      }
+                                    }
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "251 M reproducciones"
+                                      }
+                                    ],
+                                    "accessibility": {
+                                      "accessibilityData": {
+                                        "label": "251 millones reproducciones"
+                                      }
+                                    }
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "playlistItemData": {
+                              "videoId": "w7pjt9ZH3NM"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

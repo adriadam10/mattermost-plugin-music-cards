@@ -1,0 +1,35 @@
+{
+  "playabilityStatus": {
+    "status": "UNPLAYABLE"
+  },
+  "videoDetails": {
+    "videoId": "w7pjt9ZH3NM",
+    "title": "La Perla",
+    "author": "ROSALÍA y Yahritza Y Su Esencia",
+    "lengthSeconds": "196",
+    "thumbnail": {
+      "thumbnails": [
+        {
+          "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w60-h60-l90-rj",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w120-h120-l90-rj",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w226-h226-l90-rj",
+          "width": 226,
+          "height": 226
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/dTpYWRisnoZ56BD2GCI_DblY8iJdhwAEg3IAlqbVfn0zBuZBNFBFmX8ZH-OwNV3Cq2k1zojPYcMVgz7e=w544-h544-l90-rj",
+          "width": 544,
+          "height": 544
+        }
+      ]
+    }
+  }
+}
